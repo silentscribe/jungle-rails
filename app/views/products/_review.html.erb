@@ -2,5 +2,11 @@
   <li class="list-group-item list-group-item-warning">
     <h4 class="list-group-item-heading"><%= review.user.name %></h4>
     <p class="list-group-item-text"><%= review.description %></p>
-  </li>
+    <span><%= review.created_at.strftime('%D') %></span>
+    <div>
+    <% review.rating.times do %>
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    <% end %>
+    </div>
+  </li> 
 </div>
