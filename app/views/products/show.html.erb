@@ -27,5 +27,8 @@
     </div>
 
   </article>
-  <div><%= render "review" %></div>
+  <h2>Reviews</h2>
+  <% @reviews.each do |review|%>
+  <%= render partial:"review", locals: { review: review }%>
+  <% end %>
 </section>
