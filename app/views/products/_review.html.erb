@@ -8,5 +8,8 @@
     </div>
     <p class="list-group-item-text"><%= review.description %></p>
     <span><%= review.created_at.strftime('%D') %></span>
+    <% if current_user.inspect == review.user.inspect %>
+    <p><%= link_to fa_icon('trash'), [@product, review], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %></p>
+    <% end %>
   </li> 
 </div>
