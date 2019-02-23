@@ -1,15 +1,21 @@
-<div class="list-group">
+<div class="list-group review">
   <li class="list-group-item list-group-item-warning">
-    <h4 class="list-group-item-heading"><%= review.user.name %></h4>
-    <div>
+    <div class="review-head">
+    <div class="rating-stars">
+    <h4 class="list-group-item-heading rating-stars"><%= review.user.name %></h4>
+    <div class="rating-stars">
     <% review.rating.times do %>
     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
     <% end %>
     </div>
-    <p class="list-group-item-text"><%= review.description %></p>
-    <span><%= review.created_at.strftime('%D') %></span>
+    <span class="rating-stars">Posted: <%= review.created_at.strftime('%D') %></span>
+    </div>
+    
+    
     <% if current_user.inspect == review.user.inspect %>
-    <p><%= link_to fa_icon('trash'), [@product, review], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %></p>
+    <%= link_to fa_icon('trash'), [@product, review], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
     <% end %>
+    </div>
+    <p class="list-group-item-text"><%= review.description %></p>
   </li> 
 </div>

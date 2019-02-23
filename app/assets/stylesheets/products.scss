@@ -83,6 +83,23 @@ main section.products-show {
       max-width: 100%;
     }
   }
+  .compose-review {
+    margin-bottom: 1em;
+  }
+  .review {
+    display: flex;
+    li {
+      width:100%;
+    }
+    .review-head {
+      display: flex;
+      justify-content: space-between;
+    }
+    .rating-stars {
+      display: inline-flex;
+      margin-right: 1em;
+    }
+  }
 }
 
 
