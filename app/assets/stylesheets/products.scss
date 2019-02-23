@@ -82,6 +82,14 @@ main section.products-show {
     img.main-img {
       max-width: 100%;
     }
+    .no-stock {
+      color: white;
+      background-color: red;
+      font-size: 20px; 
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 1em;
+    }
   }
   .compose-review {
     margin-bottom: 1em;
