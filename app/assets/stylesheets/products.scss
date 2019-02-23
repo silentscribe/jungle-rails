@@ -85,6 +85,11 @@ main section.products-show {
   }
   .compose-review {
     margin-bottom: 1em;
+    .compose-review-right {
+      display: inline-flex;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
   .review {
     display: flex;
