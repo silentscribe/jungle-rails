@@ -1,7 +1,17 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. As students we were given this functioning app and asked to add features and debug certian features. 
+* features added were:
+  - Sold out badge on product index.
+  - Added admin namespace and authentication(user HTTP Basic Authentication) and added ability for admin to add categories.
+  - Added user authentication via bcrypt (registration and login)
+  - Post order submission page refactored for better UX showing appropriate content to user to review what they ordered.
+  - Implemented the mailout feature of rails to send a customer their order details once they have completed their order.
+  - Empty cart logic added for better UX and option to redirect to continue shopping if the cart is empty.
+  - Product ratings feature added. Logged in users can rate products and delete their own ratings.
 
+!["Screenshot of the product page"]()
+!["Screenshot of the sold out button page"]()
 
 ## Setup
 
