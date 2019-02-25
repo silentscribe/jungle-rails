@@ -29,7 +29,7 @@ RSpec.configure do |config|
   #   end
   # end
 
-  config.include FactoryBot::Syntax::Methods
+  # config.include FactoryBot::Syntax::Methods
 
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
