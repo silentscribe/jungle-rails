@@ -10,8 +10,8 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
   - Empty cart logic added for better UX and option to redirect to continue shopping if the cart is empty.
   - Product ratings feature added. Logged in users can rate products and delete their own ratings.
 
-!["Screenshot of the product page"]()
-!["Screenshot of the sold out button page"]()
+!["Screenshot of the product page"](https://github.com/silentscribe/jungle-rails/blob/master/pictures/Product-page-with-review.png)
+!["Screenshot of the sold out button page"](https://github.com/silentscribe/jungle-rails/blob/master/pictures/Sold-out-feature.png)
 
 ## Setup
 
