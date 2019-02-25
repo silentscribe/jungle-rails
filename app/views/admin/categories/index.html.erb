@@ -9,9 +9,11 @@
   </div>
 
   <div class="list-group">
+  <ul>
   <% @categories.each do |cat|%>
-  <a href="#" class="list-group-item list-group-item-action"><%= cat.name %></a>
+  <li class="list-group-item list-group-item-action"><%= link_to cat.name, cat%></li>
   <% end%>
+  </ul>
   </div>
  
 
