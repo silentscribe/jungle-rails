@@ -50,7 +50,9 @@ end
 group :test do
   # gem 'factory_bot_rails'
   gem 'shoulda-matchers'
-  # gem 'database_cleaner'
+  gem 'database_cleaner'
+  gem 'poltergeist'
+  gem 'capybara'
 end
 
 group :development do
