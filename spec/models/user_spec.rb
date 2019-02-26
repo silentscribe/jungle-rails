@@ -38,9 +38,28 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe ".authenticate_with_credential" do
+  describe ".authenticate_with_credentials" do
     it "authenticates user login credentials" do
-      
+      subject.save!
+      user = User.authenticate_with_credentials(subject.email, subject.password)
+      expect(user).to_not be_nil
+    end
+
+    it "authenticates user login credentials if not user" do
+      user = User.authenticate_with_credentials(subject.email, subject.password)
+      expect(user).to be_nil
+    end
+
+    it "authenticates user login credentials if extra spaces" do
+      subject.save!
+      user = User.authenticate_with_credentials(" steve@steve.com ", subject.password)
+      expect(user).to_not be_nil
+    end
+
+    it "authenticates user login credentials if wrong case" do
+      subject.save!
+      user = User.authenticate_with_credentials("steve@Steve.com ", subject.password)
+      expect(user).to_not be_nil
     end
   end
 end
