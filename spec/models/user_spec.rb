@@ -37,4 +37,10 @@ RSpec.describe User, type: :model do
       expect(subject.errors.full_messages).to be_present
     end
   end
+
+  describe ".authenticate_with_credential" do
+    it "authenticates user login credentials" do
+      
+    end
+  end
 end
