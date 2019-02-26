@@ -22,7 +22,19 @@ RSpec.describe User, type: :model do
       expect(subject.errors.full_messages).to be_present
     end
 
-    it "validates that password is within range" do
+    it "validates that email is unique" do
+      will = User.new(first_name: 'Will', last_name: 'Williams', email: 'will@will.com', password: '90909090', password_confirmation: '90909090')
+      will.save!
+      subject.email = 'will@WILL.COM'
+      expect(subject).to_not be_valid
+      expect(subject.errors.full_messages).to be_present
+    end
+
+    it "validates that password is not too short and within range" do
+      subject.password = "f4g"
+      subject.password_confirmation = "f4g"
+      expect(subject).to_not be_valid
+      expect(subject.errors.full_messages).to be_present
     end
   end
 end
