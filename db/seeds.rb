@@ -138,16 +138,16 @@ User.create!({
   first_name: 'Sally', 
   last_name: 'Sallys', 
   email: 'sally@sally.com', 
-  password: 's1234567',
-  password_confirmation: 's1234567'
+  password: 's12345678',
+  password_confirmation: 's12345678'
 })
 
 User.create!({
   first_name: 'Bob', 
   last_name: 'Bobbies',  
   email: 'bob@bob.com', 
-  password: 'b1234567',
-  password_confirmation: 'b1234567'
+  password: 'b12345678',
+  password_confirmation: 'b12345678'
 })
 
 # Create Reviews
