@@ -135,17 +135,19 @@ cat3.products.create!({
 # Create User
 
 User.create!({
-  name: 'Sally', 
+  first_name: 'Sally', 
+  last_name: 'Sallys', 
   email: 'sally@sally.com', 
-  password: 's123',
-  password_confirmation: 's123'
+  password: 's1234567',
+  password_confirmation: 's1234567'
 })
 
 User.create!({
-  name: 'Bob', 
+  first_name: 'Bob', 
+  last_name: 'Bobbies',  
   email: 'bob@bob.com', 
-  password: 'b123',
-  password_confirmation: 'b123'
+  password: 'b1234567',
+  password_confirmation: 'b1234567'
 })
 
 # Create Reviews
